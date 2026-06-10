@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from models.homeRsponse import HomeResponse
-router = APIRouter()
+from models.home_reponse import HomeResponse
+
 router = APIRouter(prefix="", tags=["home"])
 # For non-root routers (e.g. users): prefix="/users", tags=["users"]
 
