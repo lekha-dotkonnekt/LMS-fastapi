@@ -1,9 +1,7 @@
 
 from fastapi import FastAPI
+from router.home import router as home_router
 
 app = FastAPI()
 
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+app.include_router(home_router)
